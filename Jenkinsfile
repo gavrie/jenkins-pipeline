@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker 'python:3' }
+    agent any
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+                sh 'echo "Hello world"'
             }
         }
     }
